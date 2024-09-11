@@ -1,0 +1,31 @@
+/*Header*/
+.fixed_header{
+    height:50px;
+}
+header{
+    height:inherit;
+    background-color:rgb(244, 244, 244);
+    border-bottom:1px solid rgb(192, 192, 192);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.searchbar{
+    margin-left:4rem;
+}
+.search{
+    height:35px;
+}
+input:focus{
+    border:1px solid black;
+}
+#dropdown-toggle{
+    margin-left:0px !important;
+}
+#dropdown-toggle::after{
+    display:none;
+}
+.dropdown-menu.show{
+    margin-top:-5px;
+}
+.name_designation:hover{
+    background-color: transparent !important;
+}

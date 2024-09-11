@@ -1,0 +1,38 @@
+@use '../base/mixins' as mixin;
+
+.holiday{
+    border:1px solid grey;
+    @include mixin.borderBoxshadow();
+}
+.left,.right{
+    width:30%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    flex-direction: column;
+    @include mixin.flex(center,center);
+    row-gap:15px;
+}
+.left>h3{
+    font-size:16px !important;
+    text-align:center;
+}
+.right>p{
+    font-size:20px;
+    text-align:center;
+    font-family: $holiday;
+}
+.right>h3>span{
+    font-size:30px;
+    margin-right:5px;
+}
+.right>h3>sup{
+    font-size:20px;
+}
+.right{
+    width:70%;
+    background-color:  #f9edf8;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}

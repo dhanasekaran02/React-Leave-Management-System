@@ -1,0 +1,41 @@
+.leave_type_container{
+    height:90%;
+}
+.add_leave_type{
+    border:1px solid grey;
+}
+.leave-type-table{
+    height: 650px;
+}
+.leave-tbl tr td:nth-child(2),.leave-tbl tr td:nth-child(4){
+    text-align:center;
+    text-indent: 0;
+}
+.leave-tbl tr td{
+    background-color:white;
+}
+input,input[type="radio"],.radio-border{
+    border:1px solid grey;
+}
+.modal-header{
+    border-bottom:1px solid black;
+}
+.modal-border{
+    border:1px solid;
+}
+.modal-button{
+    background-color: #3b3423;
+}
+.modal-button:hover{
+    background-color: #514528;
+}
+td:last-child input:last-child{
+    width:20px;
+    height:20px;
+}
+.radio-border{
+    border:1px solid grey;
+}
+.policy{
+    text-align: justify;
+}

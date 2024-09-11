@@ -1,0 +1,30 @@
+.login-nav{
+    background-color:#725103;
+    height:75px;
+}
+.login-form{
+    width:28rem;
+    /* border:1px solid black; */
+    padding:10px;
+    position:relative;
+    box-shadow:1px 1px 8px 0.2px;
+    border-radius:5px;
+    padding-bottom: 20px;;
+}
+#signin-heading{
+    position: absolute;
+    top:5%;
+    font-size:1.5rem;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+small{
+    color:red;
+    &>ul{
+        margin-top:5px;
+    }
+}
+@media screen and (max-width:600px){
+    .login-form{
+        width:70%;
+    }
+}

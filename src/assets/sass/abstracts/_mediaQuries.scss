@@ -1,0 +1,398 @@
+@media screen and (min-width:350px) and (max-width:560px){
+    aside{
+        display:none;
+    }
+    .searchbar{
+        display: none !important;
+    }
+    .name_designation{
+        font-size:12px;
+    }
+    .profile_bar{
+        margin-left:20px;
+    }
+    #menu-phone{
+        display: block !important;
+        margin:0px 15px;
+    }
+    .searchbar{
+        margin-left:10px !important;
+        width:150px !important;
+    }
+    .main-content{
+        margin-left:10px !important;
+        padding-left:0px !important;
+    }
+    main{
+        margin-left:0px;
+        margin-right:0px;
+        padding:1px;
+        padding-top:10px;
+        margin-top:10px;
+    }
+    .leave{
+        width:130px;
+    }
+    .left_member_card{
+        padding-left:20px !important;
+    }
+
+    .applied_date{
+        justify-content: space-between !important;
+    }
+    #signin-heading{
+        margin-left:10px !important;
+    }
+    .date-range{
+        font-size:14px;
+    }
+    .leave_days{
+        padding-top:15px;
+        padding-left:35px;
+    }
+    .calender_days{
+        font-size:14px !important;
+    }
+    section{
+        margin-left:10px !important;
+    }
+    .leave-form{
+        width:95%;
+    }
+    .main_leave_history,.main_policy_container{
+        padding-left:0px;
+    }
+    .pending_leave{
+        width:auto;
+    }
+    .searchbar_table{
+        width:40rem !important;
+    }
+    .leave_taken_table{
+        display: block !important;
+    }
+    .apply_leave_form{
+        padding: 1px !important;
+    }
+    .profile_form>form{
+        display:block;
+    }
+    .change_password{
+        width:95% !important;
+    }
+    .ul_policy_list{
+        padding-left:0px;
+    }
+    ol{
+        padding-left:10px !important;
+    }
+    #new_pwd{
+        margin-left:0em;
+        width:90%;
+    }
+    #old_pwd{
+        margin-left:0em;
+        width:92%;
+    }
+    #confirm_pwd{
+        margin-left:0em;
+        width:82%;
+    }
+    .inner_profile{
+        width:92%;
+    }
+    .edit_icon{
+        padding-left:0px !important;
+    }
+    .main_profile_container{
+        padding-left: 10px;
+    }
+
+}
+@media screen and (min-width:375px) and (max-width:500px) {
+    .pending_leave{
+        width:90%;
+        margin-left:15px !important;
+    }
+}
+
+@media  screen and (max-width:380px) {
+    .leave{
+        width:180px;
+    }
+}
+
+@media screen and (max-width:1208px) {
+    #applied-leave{
+        margin-top:14px !important;
+    }
+}
+
+@media screen and (min-width:551px) and (max-width:760px){
+    .apply_leave_form{
+        width:94%;
+        /* margin-left:20px !important; */
+    }
+    .leave-form{
+        width:94%;
+    }
+    .leave_history{
+        margin-left:35px;
+    }
+    .policy_container{
+        width:93% !important;
+    }
+    .policy_section{
+        margin-top:75px;
+        /* margin-left:20px; */
+    }
+    .profile_form>form{
+        display:block;
+    }
+    .main_leave_history{
+        width:96%;
+    }
+    .change_password{
+        width:90% !important;
+    }
+}
+
+@media screen and (max-width:430px){
+    .inner_leave_history{
+        height:100% !important;
+    }
+    .leave_taken_history{
+        height:400px;
+    }
+}
+
+// ==================== Manager Media quries --------------
+
+/* Small device media */
+@media screen and (min-width:576px) and  (max-width:769px){
+    .data-load{
+        width:250px !important;
+        height:250px;
+    }
+    .chart-img>img{
+        height:200px !important;
+    }
+    .charts,.pie,.bar{
+        width:250px !important;
+    }
+    .imp_exp{
+        width:100%;
+        /* align-items: center; */
+        &>button{
+            margin-bottom: 6px;
+        }
+    }
+    .highest_leave{
+        padding: 5px !important;
+    }
+    .hl-left>p,.hl-right>p{
+        font-size:12px !important;
+    }
+}
+
+/* Extra small device media */
+@media screen and (max-width:575px){
+    .data-load{
+        width:100%!important;
+        height:200px !important;
+    }
+    .charts,.pie,.bar{
+        width:100% !important;
+        margin-top:10px;
+    }
+}
+/* ===================================== Media queries ========================== */
+@media screen and (max-width:1199px){
+    .team-mem-presence{
+        height:380px !important;
+        margin-bottom:10px;
+    }
+    .table-member{
+        margin-top: 10px !important;
+    }
+    .holiday{
+        height:100%;
+    }
+}
+@media screen and (min-width:350px) and (max-width:550px){
+    aside{
+        display:none !important;
+    }
+    .name_designation{
+        font-size:12px;
+    }
+    /* .inner_leave_block{
+        justify-content: center !important;
+    } */
+    .profile_bar{
+        margin-left:20px;
+    }
+    #menu-phone{
+        display: block;
+        margin:0px 15px;
+        color:black;
+    }
+    .searchbar{
+        margin-left:10px !important;
+        width:150px !important;
+    }
+    .main-content{
+        margin-left:10px !important;
+        padding-left:0px !important;
+    }
+    main{
+        margin-left:10px;
+        margin-right:0px;
+        padding:1px;
+        padding-top:10px;
+        margin-top:10px;
+    }
+    .leave-types-container,.table-member,.holiday {
+        margin-left:-10px; 
+    }
+    section{
+        margin-left:10px !important;
+    }
+    .team-mem-presence{
+        margin-left:-25px;
+    }
+    .notification-card{
+        width:340px !important;
+    }
+    .report-col-1{
+        margin-left:0px !important;
+    }
+    .data-load{
+        height:300px !important;
+    }
+    .imp_exp{
+        flex-direction: column;
+    }
+    .import{
+        margin-bottom: 10px !important;
+    }
+}
+
+@media screen and (max-width:435px){
+    .inner_leave_block{
+        justify-content: center !important;
+    }
+    .total-employee{
+        margin-bottom:0px !important;
+    }
+}
+
+// ================================ hr media query =====================================
+@media screen and (max-width:1199px){
+    .team_members{
+        height:380px !important;
+    }
+    .table-member{
+        margin-top: 10px !important;
+    }
+    .holiday{
+        height:100%;
+    }
+}
+@media screen and (max-width:769px){
+    .leave-type-table{
+        height:auto;
+        padding-left:5px;
+    }
+    .add_leave_type{
+        height:auto !important;
+        padding-bottom: 10px;
+    }
+    .table-member{
+        height:300px;
+        margin-bottom:20px;
+    }
+}
+@media screen and (max-width:900px) {
+    .add_leave_type{
+        height:auto !important;
+        padding-bottom: 10px;
+    }
+}
+@media screen and (min-width:350px) and (max-width:550px){
+    aside{
+        display:none !important;
+    }
+    .name_designation{
+        font-size:12px;
+    }
+    .profile_bar{
+        margin-left:20px;
+    }
+    
+    #menu-phone{
+        display: block;
+        margin:0px 15px;
+    }
+    .add_leave_type{
+        width:100% !important;
+    }
+    .searchbar{
+        margin-left:10px !important;
+        width:150px !important;
+    }
+    .main-content{
+        margin-left:10px !important;
+        padding-left:0px !important;
+    }
+    main{
+        margin-left:10px;
+        margin-right:0px;
+        padding:1px;
+        padding-top:10px;
+        margin-top:10px;
+    }
+
+    .holiday{
+        width:99%;
+    }
+    .leave-types-container,.team_members,.table-member,.holiday {
+        margin-left:-0px; 
+    }
+    .leave-type-table{
+        padding-left:0px !important; 
+        margin-left:0px !important;
+    }
+    section{
+        margin-left:10px !important;
+    }
+    .main_policy_container{
+        padding-left:10px;
+        margin-left:0px;
+    }
+}
+
+@media screen and (max-width:430px){
+    .inner_leave_block{
+        justify-content: center !important;
+    }
+    .total-employee{
+        margin-bottom:0px !important;
+    }
+    .team-members{
+        padding:0px;
+    }
+    .admin{
+        height: fit-content !important;
+        padding:5px !important;
+    }
+    .add_employee_container{
+        padding-left:0px !important;
+    }
+    .backup{
+        width:auto !important;
+    }
+    .apl_column_2{
+        margin-left:75px !important;
+    }
+}

@@ -1,0 +1,46 @@
+@use '../base/mixins' as mixin;
+.team-member-container{
+    // background-color: #f3f3f3 !important ;
+    border:1px solid black;
+}
+.team_members{
+    border:0.5px solid grey !important;
+    background-color: whitesmoke;
+    padding:5px !important;
+    @include mixin.borderBoxshadow();
+}
+.member-name{
+    font-size:17px;
+}
+.left_member_card>p:nth-child(2){
+    font-size:14px;
+}
+.member_card{
+    border: 1px solid grey;
+}
+.present{
+    color:olivedrab;
+    font-weight:600;
+    position:relative;
+}
+.present::before{
+    /* border:2px solid olivedrab; */
+    @include mixin.leaveBefore();
+    bottom:4px;
+    background-color: rgb(140, 196, 30);
+    border-radius:50%;
+}
+.on_leave{
+    color:#e82424;
+    font-weight:600;
+    position:relative;
+}
+.on_leave::before{
+    @include mixin.leaveBefore();
+    bottom:17%;
+    background-color:#e82424;
+    border-radius:50%;
+}
+.members_heading{
+    border-radius: 0.375rem 1px 0 0;
+}

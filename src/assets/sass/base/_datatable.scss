@@ -1,0 +1,17 @@
+.dt-button{
+    color:white !important;
+}
+.sorting{
+    padding:8px !important;
+    text-align: center !important;
+}
+input[type="search"]{
+    background-color: white !important;
+    border-radius: 5px;
+}
+.sorting::after,.sorting::before{
+    display: none !important;
+}
+.dt-button{
+    background-color: #524321 !important;
+}

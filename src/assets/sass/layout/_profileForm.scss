@@ -1,0 +1,32 @@
+@use '../base/mixins' as mixin;
+.profile_form>form{
+    display:flex;
+    position:relative;
+}
+.profile_left_form,.profile_right_form{
+    background-color:whitesmoke;
+    margin-top:10px;
+    width:100%;
+    @include mixin.flex(start,space-evenly);
+    flex-direction: column;
+    height:90%;
+    background-color: white;
+    padding:10px;
+    padding-left:25px;
+}
+.input{
+    margin-bottom:1.1rem;
+    margin-top:0.4rem;
+    height:40px;
+    width:95%; 
+}
+.input{
+    padding-left:10px;
+}
+.input::placeholder{
+    color:black;
+    font-weight: 600;
+}
+.profile-btn{
+    margin-left:10px;
+}

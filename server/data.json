@@ -1,0 +1,242 @@
+{
+  "userList": [
+    {
+      "usermail": "employee@leavaease.com",
+      "password": "Pwd@employee1",
+      "id": "f936"
+    }
+  ],
+  "employee": [
+    {
+      "id": "1",
+      "designation": "Developer",
+      "firstName": "Dhanasekaran",
+      "lastName": "Baskaran",
+      "dob": "2003-08-05",
+      "phone": "1234567899",
+      "deptName": "UIUX",
+      "manager": "bhadriprasath",
+      "employeeMailId": "employee@leavaease.com",
+      "password": "Pwd@employee1",
+      "userType": [
+        "employee"
+      ],
+      "state": "Tamilnadu",
+      "notification": "admin",
+      "loggedAs": "employee"
+    },
+    {
+      "id": "2",
+      "designation": "manager",
+      "firstName": "Arun",
+      "lastName": "Mariappan",
+      "dob": "2002-08-07",
+      "phone": "1234567899",
+      "deptName": "UIUX",
+      "manager": "cheran",
+      "employeeMailId": "manager@leavaease.com",
+      "password": "Pwd@manager1",
+      "userType": [
+        "employee",
+        "manager"
+      ],
+      "state": "Tamilnadu",
+      "notification": "admin"
+    },
+    {
+      "id": "3",
+      "name": "Bhadriprasath",
+      "designation": "hr",
+      "firstName": "Bhadriprasath",
+      "lastName": "BJ",
+      "dob": "2002-07-22",
+      "phone": "1234567899",
+      "deptName": "UIUX",
+      "manager": "bhadriprasath",
+      "employeeMailId": "hr@leavaease.com",
+      "password": "Pwd@hr12",
+      "userType": [
+        "employee",
+        "hr"
+      ],
+      "state": "Tamilnadu",
+      "notification": "admin"
+    },
+    {
+      "id": "4",
+      "firstName": "Surjitkumar",
+      "lastName": "Ashok",
+      "dob": "2003-08-01",
+      "phone": "1234567890",
+      "designation": "admin",
+      "deptName": "Administration",
+      "employeeMailId": "admin@leavaease.com",
+      "password": "Pwd@admin1",
+      "manager": "dhanasekaran",
+      "userType": [
+        "employee",
+        "admin"
+      ],
+      "state": "Tamilnadu",
+      "notification": "hr"
+    }
+  ],
+  "leaveTypes": [
+    {
+      "name": "Casual Leave",
+      "value": "Casual Leave",
+      "enabled": "yes",
+      "default": "yes",
+      "annual": "no",
+      "days": "12",
+      "color": "#23d1e1",
+      "id": "ad37"
+    },
+    {
+      "name": "Sick Leave",
+      "value": "Sick Leave",
+      "enabled": "yes",
+      "default": "no",
+      "annual": "yes",
+      "days": "15",
+      "color": "#756461",
+      "id": "f7b7"
+    },
+    {
+      "name": "LOP Leave",
+      "value": "LOP Leave",
+      "enabled": "yes",
+      "default": "yes",
+      "annual": "no",
+      "days": "15",
+      "color": "#5d12a2",
+      "id": "2903"
+    },
+    {
+      "id": "21.529692699024427",
+      "name": "Paternal Leave",
+      "default": "yes",
+      "enabled": "no",
+      "annual": "yes",
+      "days": "18",
+      "leavecolor": "#000000",
+      "color": "#702424"
+    }
+  ],
+  "leaves": [
+    {
+      "id": "40.54620514477625",
+      "leaveType": "Casual Leave",
+      "startDate": "2024-02-19",
+      "endDate": "2024-02-20",
+      "noOfDays": 2,
+      "manager": "dhanasekaran",
+      "suggestion": "Cheran",
+      "reason": "This is just a casual leave",
+      "empid": "1",
+      "empname": "Dhanasekaran B",
+      "designation": "Developer",
+      "status": "approved",
+      "appliedDate": "18-02-2024"
+    },
+    {
+      "id": "28.33713195186105",
+      "leaveType": "Sick Leave",
+      "startDate": "2024-03-21",
+      "endDate": "2024-03-28",
+      "noOfDays": 8,
+      "manager": "dhanasekaran",
+      "suggestion": "",
+      "reason": "Just a sick leave",
+      "empid": "1",
+      "empname": "Dhanasekaran B",
+      "designation": "Developer",
+      "status": "approved",
+      "appliedDate": "18-03-2024"
+    },
+    {
+      "id": "34.03426047865321",
+      "leaveType": "Casual Leave",
+      "startDate": "2024-04-01",
+      "endDate": "2024-04-06",
+      "noOfDays": 6,
+      "manager": "dhanasekaran",
+      "suggestion": "s",
+      "reason": "asdfa",
+      "empid": "1",
+      "empname": "Dhanasekaran B",
+      "designation": "Developer",
+      "status": "pending",
+      "appliedDate": "27-03-2024"
+    }
+  ],
+  "policies": [
+    {
+      "id": "41.19633551105193",
+      "policyName": "Casual Leave",
+      "policyDate": "2024-02-24",
+      "description": "The duration of casual leave typically ranges from a few hours to a few days depending on the organizations policies and the nature of the employees need for leave. Different organizations may have variations in the duration of casual leave based on their work practices and culture. Additionally there may be limitations on the number of casual leaves an employee can take within a specific time period."
+    },
+    {
+      "id": "47.588531448158776",
+      "policyName": "Sick Leave",
+      "policyDate": "2024-03-20",
+      "description": "This is just a casual leave that we are going to add and remove and save changes"
+    },
+    {
+      "id": "80.38677449483549",
+      "policyName": "Loss Of Pay",
+      "policyDate": "2024-09-12",
+      "description": "This is just a LOP for a leave. Your salary should be debited if you take this leave\n"
+    }
+  ],
+  "notifications": [],
+  "leavehistories": [
+    {
+      "leaveType": "Casual Leave",
+      "startDate": "12-10-2023",
+      "endDate": "14-10-2023",
+      "totalDays": "03",
+      "reason": "Need to take leave",
+      "id": "f1d4"
+    },
+    {
+      "leaveType": "Sick Leave",
+      "startDate": "15-10-2023",
+      "endDate": "17-10-2023",
+      "totalDays": "03",
+      "reason": "Small Fever",
+      "id": "efac"
+    },
+    {
+      "leaveType": "LOP Leave",
+      "startDate": "21-09-2023",
+      "endDate": "23-09-2023",
+      "totalDays": "03",
+      "reason": "Loss Of Pay Leave to be taken",
+      "id": "48a6"
+    },
+    {
+      "leaveType": "Casual Leave",
+      "startDate": "12-10-2023",
+      "endDate": "14-10-2023",
+      "totalDays": "03",
+      "reason": "Need to take leave",
+      "id": "e287"
+    }
+  ],
+  "holiday": [
+    {
+      "id": "1",
+      "holidayname": "New Year",
+      "date": "2024-01-01",
+      "description": "New Year Celebration"
+    },
+    {
+      "id": "2",
+      "holidayname": "Pongal",
+      "date": "2024-01-13",
+      "description": "Pongal Celebration"
+    }
+  ]
+}

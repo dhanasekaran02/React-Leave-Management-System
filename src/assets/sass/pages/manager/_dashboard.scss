@@ -1,0 +1,59 @@
+.leave_types{
+    border:1px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-left: 20px;
+}
+.team_members{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.member-table{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border:1px solid grey;
+}
+.applied_leave_heading{
+    border:1px solid grey;
+}
+.members{
+    height:320px;
+}
+.custom-select{
+    margin-bottom:10px;
+}
+thead{
+    background-color: #d2a74bc6;
+}
+.sorting{
+    background-color: #fad177c6 !important;
+}
+table{
+    border-collapse: collapse;
+    border:1px solid grey;
+}
+table tr th{
+    color:#3b3423;
+    border:1px solid grey;
+}
+.applied_leave_desc{
+    margin-top:5px;
+    padding:2px;
+}
+table{
+    border:1px solid grey;
+}
+.applied_leave_desc>table{
+    width:100%;
+    /* border-collapse: collapse; */
+}
+table tr th, table tr td{
+    padding:9px;
+    text-align: center;
+}
+table tr td{
+    padding:12px;
+}
+.sorting_desc::before{
+    display: none;
+}
+.sorting_desc::after{
+    display: none;
+}

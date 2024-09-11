@@ -1,0 +1,30 @@
+@import 'base/reset';
+@import 'abstracts/custom-utilities';
+@import 'abstracts/colors';
+@import 'abstracts/font';
+@import 'base/datatable';
+@import './login';
+@import 'layout/header';
+@import 'layout/sidebar';
+@import 'layout/main';
+@import './pages/dashboard';
+@import 'pages/applyLeave';
+@import 'layout/calender';
+@import 'pages/appliedLeaveStatus';
+@import 'pages/leavePolicies';
+@import 'pages/profile';
+@import 'abstracts/mediaQuries';
+
+//manager
+@import 'pages/manager/dashboard';
+@import 'pages/manager/pendingNotification';
+@import 'pages/reports';
+
+//hr
+@import 'pages/hr/addLeaveType';
+
+//admin
+@import 'pages/admin/dashboard';
+@import 'pages/admin/addemployee';
+@import 'pages/admin/addleave';
+@import 'pages/admin/backup';

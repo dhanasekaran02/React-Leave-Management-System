@@ -1,0 +1,14 @@
+ol{
+    list-style-position: inside;
+    margin-top:10px;
+    &>span{
+        margin-bottom:10px;
+    }
+}
+.ul_policy_list{
+    list-style-position: inside;
+    padding-left:24px;
+    margin-top:5px;
+    margin-bottom:10px;
+    line-height:25px;
+}

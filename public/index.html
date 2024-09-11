@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Leave Management System</title>
+
+    <!-- Data table -->
+    <link href="https://cdn.datatables.net/v/dt/jszip-3.10.1/dt-1.13.8/b-2.4.2/b-html5-2.4.2/b-print-2.4.2/datatables.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossorigin></script>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"
+  crossorigin></script>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"
+  crossorigin></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- Chart script -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+
+    <!-- Data table scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/jszip-3.10.1/dt-1.13.8/b-2.4.2/b-html5-2.4.2/b-print-2.4.2/datatables.min.js"></script>
+
+    <script>
+    // setup 
+    //Leave type table data table
+    //Employee Table
+    $(document).ready(function(){
+            $('#leave-history-table').dataTable({
+                dom:'Bfrtip',
+                buttons:[
+                'copy','csv', 'excel', 'pdf', 'print'
+                ]
+            });
+        })
+    //Manager Table
+    $(document).ready(function(){
+    $('#team-members-table').dataTable({
+        dom:'Bfrtip',
+        buttons:[
+        'copy','csv', 'excel', 'pdf', 'print'
+        ]
+    });
+});
+
+    const data = {
+      labels: ['Dhanasekaran', 'Arun', 'Bhadriprasath', 'Surjitkumar', 'Cheran', 'Kishorkumar', 'Krishna'],
+      datasets: [{
+        label: 'Leave Calender',
+        data: [
+            ['2023-12-01','2023-12-03'],
+            ['2023-12-02','2023-12-05'],
+            ['2023-12-01','2023-12-04'],
+            ['2023-12-04','2023-12-05'],
+            ['2023-12-02','2023-12-08'],
+            ['2023-12-03','2023-12-07'],
+            ['2023-12-05','2023-12-07']
+        ],
+        backgroundColor: [
+          'rgba(255, 26, 104, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)',
+          'rgba(0, 0, 0, 1)'
+        ],
+        borderColor: [
+          'rgba(255, 26, 104, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)',
+          'rgba(0, 0, 0, 1)'
+        ],
+        //borderWidth: 1
+        barPercentage:0.5
+      }],
+      options :{
+        responsive:true,
+      },
+    };
+ 
+
+    // config 
+    const config = {
+      type: 'bar',
+      data,
+      options: {
+        indexAxis:'y',
+        scales: {
+          x:{
+            min:'2023-12-01',
+            type:'time',
+            time:{
+                unit:'day'
+            }
+          },
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    };
+
+    // render init block
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+
+
+    var chrt = document.getElementById("chartId").getContext("2d");
+var chartId = new Chart(chrt, {
+    type: 'line',
+    data: {
+    labels: ["Casual", "Sick", "Paternal", "Maternal", "LOP", "Vacation"],
+    datasets: [{
+        label: "Leave Trends",
+        data: [20, 40, 30, 35, 30, 20],
+        backgroundColor: ['yellow', 'aqua', 'pink', 'lightgreen', 'lightblue', 'gold'],
+        borderColor: ['red', 'blue', 'fuchsia', 'green', 'navy', 'black'],
+        borderWidth: 1,
+        hoverOffset:5,
+    }],
+    },
+    options: {
+    responsive: false,
+    },
+});
+
+// piechart
+var Chrt = document.getElementById("pieChart").getContext("2d");
+var chartId = new Chart(Chrt, {
+    type: 'doughnut',
+    data: {
+    labels: ["Casual", "Sick", "Paternal", "Maternal", "LOP", "Vacation"],
+    datasets: [{
+        label: "Leave Breakdown",
+        data: [20, 40, 30, 35, 30, 20],
+        backgroundColor: ['#0096FF', '#E1C16E', '#F88379', '#FFD580', '#E4D00A', '#FBCEB1'],
+        borderColor: ['black'],
+        borderWidth: 0.5,
+    }],
+    },
+    options: {
+    responsive: false,
+    layout: {
+        padding: 10,
+    }
+    
+    },
+});
+
+// mixchart
+var Chrt = document.getElementById("mixChart").getContext("2d");
+var chartId = new Chart(Chrt, {
+    type: 'polarArea',
+    data: {
+    labels: ["Casual", "Sick", "Paternal", "Maternal", "LOP", "Vacation"],
+    datasets: [{
+        label: "Leave Breakdown",
+        data: [20, 40, 30, 35, 30, 20],
+        backgroundColor: ['#DEB887', 'cadetblue', 'lightpink', '#FFA07A', '#FFE4B5', '#D8BFD8'],
+        borderColor: ['black'],
+        borderWidth: 0.5,
+    }],
+    },
+    options: {
+    responsive: false,
+    layout: {
+        padding: 10,
+    },
+    },
+});
+
+
+
+    // Instantly assign Chart.js version
+    const chartVersion = document.getElementById('chartVersion');
+    chartVersion.innerText = Chart.version;
+    </script>
+<script>var Alert = ReactBootstrap.Alert;</script>
+</html>

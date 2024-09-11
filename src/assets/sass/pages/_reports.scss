@@ -1,0 +1,66 @@
+.high_leave_heading{
+    border:1px solid grey;
+    background-color: #eece8b !important;
+}
+.data-load{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff9f9 !important;
+    border:1px solid grey;
+    border-radius: 10px;
+    width:350px;
+    border:2px solid pink;
+}
+.team-mem-presence{
+    height:82vh;
+    top:0px;
+    position: sticky !important;
+    top:20px;
+}
+.sticky{
+    position:sticky;
+    top:70px;
+}
+.highest_leave{
+    background-color: #fff9f9 !important;
+}
+.imp_exp{
+    background-color: #fff2f2 !important;
+    &>button{
+        padding:7px 20px;
+        background-color:#473610;
+        color:white;
+        border:none;
+        border-radius:4px;
+        cursor:pointer;
+        &:hover{
+            background-color: #6e5929;
+        }
+    }
+}
+.hl_left,.hl_right{
+    border:1px solid rgb(165, 122, 42);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.chart_heading{
+    border-bottom:1px solid grey;
+}
+.chart-img{
+    height:240px !important;
+    width:fit-content
+}
+.pie,.bar{
+    border:1px solid grey;
+    &>.card-header{
+        border-bottom: 1px solid;
+    }
+}
+.chart{
+    border:1px solid grey;
+}
+.bar-img>img{
+    height:240px;
+    width:100%;
+}

@@ -1,0 +1,48 @@
+@use '../base/mixins' as mixin;
+@import '../layout/profileForm';
+
+.profile_section{
+    width:95%;
+    height:96%;
+    margin-left:4%;
+    padding:5px;
+
+}
+.main_profile_container{
+    height: 96%;
+    padding-left:1.5em;
+}
+.profile_container{
+    height:100%;
+}
+.profile_details{
+    height:90%;
+    width:98%;
+    padding:5px;
+    margin-top:1%;
+    border-radius:10px;
+    border:1px solid grey;
+    background-color:var(--bg-color);
+    position:relative;
+    @include mixin.flex(center,center);
+}
+.inner_profile{
+    height:90%;
+    width:70%;
+    background-color: white;
+    border:1px solid grey;
+    border-radius:5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding:15px;
+    overflow-y:scroll;
+}
+.profile_photo{
+    @include mixin.flex(center,center);
+    flex-direction: column;
+    row-gap:10px;
+    background-color: rgb(234, 234, 234);
+    padding:10px 0px;
+}
+.profile_photo>img{
+    margin-left:10px;
+}

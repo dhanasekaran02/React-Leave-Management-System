@@ -1,0 +1,41 @@
+@use '../base/mixins' as mixin;
+@import '../layout/addLeavePolicy';
+
+.policy_section{
+    width:95%;
+    height:96%;
+    margin-left:10px;
+    padding:5px;
+}
+.main_policy_container{
+    height: 96%;
+    padding-left:1.5em;
+    width:100%;
+}
+.policies{
+    height:100%;
+}
+.policy_container{
+    height:90%;
+    width:98%;
+    margin-top:1%;
+    border-radius:10px;
+    background-color:var(--bg-color);
+    position:relative;
+}
+.policy_list{
+    height:100%;
+    width:100%;
+    background-color: white;
+    border:1px solid grey;
+    border-radius:5px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    padding:15px;
+    overflow-y:scroll;
+}
+.edit_icon{
+    &>ion-icon{
+        font-size:22px;
+        margin-left:15px;
+    }
+}   

@@ -1,0 +1,74 @@
+@use '../base/mixins' as mixin;
+
+.leave_history{
+    width:100%;
+    // height:200px;
+    /* border:2px solid black; */
+    // padding:5px;
+}
+.main_leave_history{
+    height: 100%;
+    padding-left:1.5em;
+    /* border:2px solid black; */
+}
+.inner_leave_history{
+    height:575px;
+    /* border:2px solid grey; */
+    width:98%;
+    padding:5px;
+    margin-top:1%;
+    border-radius:10px;
+    border:1px solid grey;
+}
+.pending_leave{
+    width:30rem;
+    height:8rem;
+    border:1px solid grey;
+    background-color: whitesmoke;
+    @include mixin.borderBoxshadow();
+}
+
+.edit_leave{
+    background-color: #4e3f21;
+    border-radius:4px;
+}
+.cancel_leave{
+    border-radius:4px;
+    border:none;
+    background-color: rgb(241, 77, 77);
+}
+.cancel_leave:hover{
+    background-color: rgb(249, 66, 66) !important;
+}
+.leave_taken_history{
+    height:300px;
+    padding:5px;
+}
+.leave_table{
+    width:90%;
+    height:20%;
+    border:1px solid grey;
+    /* border-radius:10px; */
+    border-collapse: collapse;
+    background-color: whitesmoke !important;
+    @include mixin.borderBoxshadow();
+}
+.leave_table tr th{
+    background-color: #eece8b !important;
+}
+.leave_table tr td,.leave_table tr th{
+    padding:9px;
+    text-align:center;
+    border:1px solid grey;
+}
+.leave_table tr td:nth-child(1){
+    text-align: left;
+    /* text-indent: 3rem; */
+}
+.leave_table tr td:last-child{
+    text-align: left;
+    /* text-indent:7rem; */
+}
+#cancel:hover{
+    background-color: rgb(252, 61, 61) !important;
+}

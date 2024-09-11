@@ -1,0 +1,29 @@
+//colors
+$body-bg:#f3f3f3;
+$heading-bg:#eece8b;
+$day:#8b6f35;
+$font:#473610;
+$leave:#835b04;
+$colors-list:(
+    "body-bg":$body-bg,
+    "heading-bg":$heading-bg,
+    "font-bg":$font
+);
+
+@each $key,$value in $colors-list{
+    .#{$key}-color{
+        background-color: $value;
+    }
+};
+
+$font-color-list:(
+    "days":$day,
+    "font":$font,
+    "leave":$leave
+);
+
+@each $key,$value in $font-color-list{
+    .#{$key}-color{
+        color: $value;
+    }
+};

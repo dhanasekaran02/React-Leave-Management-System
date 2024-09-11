@@ -1,0 +1,10 @@
+//margin-left
+$spacer:1;
+@for $i from 6 through 10{
+    .ms-#{$i}{
+        margin-left:#{$spacer*$i * 0.5}rem !important;
+    }
+    .ps-#{$i}{
+        padding-left:#{$spacer * $i * 0.5}rem;
+    }
+};

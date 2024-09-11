@@ -1,0 +1,26 @@
+@use '../base/mixins' as mixin;
+
+.applied_leaves{
+    background-color: whitesmoke;
+    height:350px;
+    padding:5px;
+    @include mixin.borderBoxshadow();
+}
+.applied_leave_description{
+    padding:30px;
+    border:1px solid grey;
+}
+.applied_leave_heading{
+    padding:10px;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+.pending{
+    color:#a1a604;
+}
+.approved{
+    color:rgb(28, 176, 28);
+}
+.rejected,.cancelled{
+    color:red;
+}

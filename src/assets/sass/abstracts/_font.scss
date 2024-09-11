@@ -1,0 +1,23 @@
+@import 'typography';
+
+$heading:'Roboto', sans-serif;
+$team-members:'Lato', sans-serif;
+$team-detail:'Inter', sans-serif;
+$holiday:'Ubuntu', sans-serif;
+$form:'Manrope', sans-serif;
+$leave-history:'Assistant', sans-serif;
+
+$fonts:(
+    "heading":$heading, 
+    "team-members":$team-members, 
+    "team-detail":$team-detail, 
+    "holiday":$holiday, 
+    "form":$form, 
+    "leave-history":$leave-history,
+    );
+
+@each $key,$value in $fonts{
+    .#{$key}-font{
+        font-family: $value;
+    }
+};

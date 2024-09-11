@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-
+This Leave Management project is developed using React.js and for state management Redux tool kit is used. Follow the following steps to run the project.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -13,6 +13,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+### `npx json-server --watch server/data.json --port 5000`
+Launches json payload server for CRUD operations.
+Lauch it on different terminal with same path.
 
 ### `npm test`
 

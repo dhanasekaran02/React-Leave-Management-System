@@ -10,74 +10,74 @@
     {
       "id": "1",
       "designation": "Developer",
-      "firstName": "Dhanasekaran",
-      "lastName": "Baskaran",
-      "dob": "2003-08-05",
+      "firstName": "employee1",
+      "lastName": "emp",
+      "dob": "2200-15-97",
       "phone": "1234567899",
       "deptName": "UIUX",
-      "manager": "bhadriprasath",
+      "manager": "employee3",
       "employeeMailId": "employee@leavaease.com",
       "password": "Pwd@employee1",
       "userType": [
         "employee"
       ],
-      "state": "Tamilnadu",
+      "state": "USA",
       "notification": "admin",
       "loggedAs": "employee"
     },
     {
       "id": "2",
       "designation": "manager",
-      "firstName": "Arun",
-      "lastName": "Mariappan",
-      "dob": "2002-08-07",
+      "firstName": "employee2",
+      "lastName": "emp",
+      "dob": "2200-15-97",
       "phone": "1234567899",
       "deptName": "UIUX",
-      "manager": "cheran",
+      "manager": "employee4",
       "employeeMailId": "manager@leavaease.com",
       "password": "Pwd@manager1",
       "userType": [
         "employee",
         "manager"
       ],
-      "state": "Tamilnadu",
+      "state": "USA",
       "notification": "admin"
     },
     {
       "id": "3",
-      "name": "Bhadriprasath",
+      "name": "employee3",
       "designation": "hr",
-      "firstName": "Bhadriprasath",
-      "lastName": "BJ",
-      "dob": "2002-07-22",
+      "firstName": "employee3",
+      "lastName": "emp",
+      "dob": "2200-15-97",
       "phone": "1234567899",
       "deptName": "UIUX",
-      "manager": "bhadriprasath",
+      "manager": "employee2",
       "employeeMailId": "hr@leavaease.com",
       "password": "Pwd@hr12",
       "userType": [
         "employee",
         "hr"
       ],
-      "state": "Tamilnadu",
+      "state": "USA",
       "notification": "admin"
     },
     {
       "id": "4",
-      "firstName": "Surjitkumar",
-      "lastName": "Ashok",
-      "dob": "2003-08-01",
+      "firstName": "employee4",
+      "lastName": "emp",
+      "dob": "2200-15-97",
       "phone": "1234567890",
       "designation": "admin",
       "deptName": "Administration",
       "employeeMailId": "admin@leavaease.com",
       "password": "Pwd@admin1",
-      "manager": "dhanasekaran",
+      "manager": "employee1",
       "userType": [
         "employee",
         "admin"
       ],
-      "state": "Tamilnadu",
+      "state": "USA",
       "notification": "hr"
     }
   ],
@@ -127,66 +127,66 @@
     {
       "id": "40.54620514477625",
       "leaveType": "Casual Leave",
-      "startDate": "2024-02-19",
-      "endDate": "2024-02-20",
+      "startDate": "2200-15-97",
+      "endDate": "2200-15-97",
       "noOfDays": 2,
-      "manager": "dhanasekaran",
-      "suggestion": "Cheran",
+      "manager": "employee1",
+      "suggestion": "ployee",
       "reason": "This is just a casual leave",
       "empid": "1",
-      "empname": "Dhanasekaran B",
+      "empname": "employee1",
       "designation": "Developer",
       "status": "approved",
-      "appliedDate": "18-02-2024"
+      "appliedDate": "2200-15-97"
     },
     {
-      "id": "28.33713195186105",
-      "leaveType": "Sick Leave",
-      "startDate": "2024-03-21",
-      "endDate": "2024-03-28",
-      "noOfDays": 8,
-      "manager": "dhanasekaran",
-      "suggestion": "",
-      "reason": "Just a sick leave",
-      "empid": "1",
-      "empname": "Dhanasekaran B",
-      "designation": "Developer",
-      "status": "approved",
-      "appliedDate": "18-03-2024"
-    },
-    {
-      "id": "34.03426047865321",
+      "id": "40.54620514477625",
       "leaveType": "Casual Leave",
-      "startDate": "2024-04-01",
-      "endDate": "2024-04-06",
-      "noOfDays": 6,
-      "manager": "dhanasekaran",
-      "suggestion": "s",
-      "reason": "asdfa",
+      "startDate": "2200-15-97",
+      "endDate": "2200-15-97",
+      "noOfDays": 2,
+      "manager": "employee1",
+      "suggestion": "ployee",
+      "reason": "This is just a casual leave",
       "empid": "1",
-      "empname": "Dhanasekaran B",
+      "empname": "employee1",
       "designation": "Developer",
-      "status": "pending",
-      "appliedDate": "27-03-2024"
+      "status": "approved",
+      "appliedDate": "2200-15-97"
+    },
+    {
+      "id": "40.54620514477625",
+      "leaveType": "Casual Leave",
+      "startDate": "2200-15-97",
+      "endDate": "2200-15-97",
+      "noOfDays": 2,
+      "manager": "employee1",
+      "suggestion": "ployee",
+      "reason": "This is just a casual leave",
+      "empid": "1",
+      "empname": "employee1",
+      "designation": "Developer",
+      "status": "approved",
+      "appliedDate": "2200-15-97"
     }
   ],
   "policies": [
     {
       "id": "41.19633551105193",
       "policyName": "Casual Leave",
-      "policyDate": "2024-02-24",
+      "policyDate": "2200-15-97",
       "description": "The duration of casual leave typically ranges from a few hours to a few days depending on the organizations policies and the nature of the employees need for leave. Different organizations may have variations in the duration of casual leave based on their work practices and culture. Additionally there may be limitations on the number of casual leaves an employee can take within a specific time period."
     },
     {
       "id": "47.588531448158776",
       "policyName": "Sick Leave",
-      "policyDate": "2024-03-20",
+      "policyDate": "2200-15-97",
       "description": "This is just a casual leave that we are going to add and remove and save changes"
     },
     {
       "id": "80.38677449483549",
       "policyName": "Loss Of Pay",
-      "policyDate": "2024-09-12",
+      "policyDate": "2200-15-97",
       "description": "This is just a LOP for a leave. Your salary should be debited if you take this leave\n"
     }
   ],
@@ -194,32 +194,32 @@
   "leavehistories": [
     {
       "leaveType": "Casual Leave",
-      "startDate": "12-10-2023",
-      "endDate": "14-10-2023",
+      "startDate": "2200-15-97",
+      "endDate": "2200-15-97",
       "totalDays": "03",
       "reason": "Need to take leave",
       "id": "f1d4"
     },
     {
       "leaveType": "Sick Leave",
-      "startDate": "15-10-2023",
-      "endDate": "17-10-2023",
+      "startDate": "2200-15-97",
+      "endDate": "2200-15-97",
       "totalDays": "03",
       "reason": "Small Fever",
       "id": "efac"
     },
     {
       "leaveType": "LOP Leave",
-      "startDate": "21-09-2023",
-      "endDate": "23-09-2023",
+      "startDate": "2200-15-97",
+      "endDate": "2200-15-97",
       "totalDays": "03",
       "reason": "Loss Of Pay Leave to be taken",
       "id": "48a6"
     },
     {
       "leaveType": "Casual Leave",
-      "startDate": "12-10-2023",
-      "endDate": "14-10-2023",
+      "startDate": "2200-15-97",
+      "endDate": "2200-15-97",
       "totalDays": "03",
       "reason": "Need to take leave",
       "id": "e287"
@@ -229,13 +229,13 @@
     {
       "id": "1",
       "holidayname": "New Year",
-      "date": "2024-01-01",
+      "date": "2200-15-97",
       "description": "New Year Celebration"
     },
     {
       "id": "2",
       "holidayname": "Pongal",
-      "date": "2024-01-13",
+      "date": "2200-15-97",
       "description": "Pongal Celebration"
     }
   ]
